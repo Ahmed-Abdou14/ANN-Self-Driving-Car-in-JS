@@ -1,0 +1,27 @@
+:root {
+    --cancas-width: max(200px, 200px);
+
+    --body-background-color: #020227;
+    --canvas-background-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--body-background-color);
+    
+    text-align: center; /*centers the canvas too*/
+    height: 100vh;
+
+    overflow: hidden; /*always the body will be overflowing from the bottom*/
+}
+
+#appCanvas {
+    background-color: var(--canvas-background-color);
+    width: var(--cancas-width);
+    /*height been set clients-ide*/
+}
