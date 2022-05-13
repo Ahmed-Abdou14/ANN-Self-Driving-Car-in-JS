@@ -1,20 +1,30 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+
 <html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Speed</title>
-        <meta name="Self driving car simulation in JS" content="">
         <meta name="" content="width=device-width, initial-scale=1">
+        <meta name="Self driving car simulation in JS" content="">
         <link rel="stylesheet" href="./styles/index.css">
     </head>
     <body>
+        
+        <div class="canvasContainer">
+            <canvas id="roadCanvas"></canvas>
+            <div class="verticalButtons">
+                <button onclick="save()">💾</button>
+                <button onclick="discard()">🗑️</button>
+            </div>
+            <canvas id="networkCanvas"></canvas>
+        </div>
 
-        <canvas id="appCanvas"></canvas>
+        <script src="visualizer.js" async defer></script>
+        <script src="network.js" async defer></script>
+        <script src="sensor.js" async defer></script>
+        <script src="utils.js" async defer></script>
+        <script src="road.js" async defer></script>
         <script src="controls.js" async defer></script>
         <script src="car.js" async defer></script>
         <script src="index.js" async defer></script>
